@@ -3,7 +3,7 @@ import React from 'react';
 function Contact({ name, setName, email, setEmail, message, setMessage, onSubmit }) {
   return (
     <section id="contact" className="contact">
-      <h2>Contact Me</h2>
+      <h2>Let's build something together! Whether you have a project idea, a question, or just want to connect, feel free to drop a message</h2>
       <form onSubmit={onSubmit}>
         <input 
           type="text" 

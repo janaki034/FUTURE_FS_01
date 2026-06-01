@@ -8,19 +8,20 @@
     font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
+
 :root {
-    --primary-color: #2c3e50;    /* Deep slate blue */
-    --accent-color: #3498db;     /* Bright interactive blue */
-    --bg-light: #f8f9fa;         /* Off-white for section alternating */
-    --text-dark: #333333;
-    --text-light: #666666;
-    --card-bg: #ffffff;
+  --primary-color: #3498db;   /* Bright interactive blue for links/accents */
+  --accent-color: #2ecc71;    /* Secondary accent if needed */
+  --bg-light: #0b0f19;        /* Sleek premium midnight dark background */
+  --text-dark: #ffffff;       /* Pure white text so it pops on the dark bg */
+  --text-light: #a0aec0;      /* Muted grayish-white text for descriptions */
+  --card-bg: #111827;         /* Slightly lighter dark gray/blue for cards */
 }
 
+
 body {
-    color: var(--text-dark);
-    line-height: 1.6;
-    background-color: #ffffff;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
 }
 
 section {
