@@ -1,0 +1,58 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#020617;
+  color:white;
+  font-family:Arial,sans-serif;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+  background:
+  radial-gradient(circle at top right,#2563eb 0%,transparent 30%),
+  radial-gradient(circle at bottom left,#7c3aed 0%,transparent 30%),
+  #020617;
+}
+
+.hero h1{
+  font-size:4rem;
+  margin-bottom:15px;
+}
+
+.hero h2{
+  color:#38bdf8;
+  margin-bottom:20px;
+}
+
+.hero p{
+  max-width:600px;
+  color:#cbd5e1;
+}
+
+.section{
+  padding:80px 20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.section h2{
+  margin-bottom:20px;
+  color:#38bdf8;
+}
+
+.card{
+  background:#0f172a;
+  padding:20px;
+  margin-top:20px;
+  border-radius:10px;
+}
