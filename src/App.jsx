@@ -53,23 +53,29 @@ function App() {
         </nav>
       </header>
 
-      {/* Using our brand new component blocks! */}
+      {/* Full screen text introduction */}
       <Hero />
+      
+      {/* Clean text description */}
       <About />
       
-      {/* Updated skills section to match your actual experience! */}
+      {/* Unified Skills Section */}
       <section id="skills" className="skills">
-        <h2>My Skills</h2>
+        <h2>Skills</h2>
         <div className="skills-container">
-          <div className="skill-badge">HTML / CSS</div>
-          <div className="skill-badge">React.js</div>
           <div className="skill-badge">Python</div>
+          <div className="skill-badge">Data Structures</div>
           <div className="skill-badge">Machine Learning</div>
+          <div className="skill-badge">SQL & Databases</div>
+          <div className="skill-badge">React.js</div>
+          <div className="skill-badge">Data Science Foundations</div>
           <div className="skill-badge">Flutter</div>
           <div className="skill-badge">Firebase</div>
+          <div className="skill-badge">HTML / CSS</div>
           <div className="skill-badge">GitHub</div>
         </div>
       </section>
+      
       <Projects />
       
       <Contact 

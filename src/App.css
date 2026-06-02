@@ -1,58 +1,73 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+/* Smoothly glide down the page when hitting navigation links */
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-  background:#020617;
-  color:white;
-  font-family:Arial,sans-serif;
+/* Base application container layout */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-light); /* Inherits midnight-dark from index.css */
 }
 
-.hero{
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-
-  background:
-  radial-gradient(circle at top right,#2563eb 0%,transparent 30%),
-  radial-gradient(circle at bottom left,#7c3aed 0%,transparent 30%),
-  #020617;
+/* Premium Navigation Bar Styles */
+navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: rgba(11, 15, 25, 0.85); /* Frosty semi-transparent dark */
+  backdrop-filter: blur(12px); /* Blurred backdrop look like modern OS panels */
+  border-bottom: 1px solid rgba(30, 41, 59, 0.5);
+  box-sizing: border-box;
 }
 
-.hero h1{
-  font-size:4rem;
-  margin-bottom:15px;
+navbar a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  margin-left: 24px;
 }
 
-.hero h2{
-  color:#38bdf8;
-  margin-bottom:20px;
+navbar a:hover {
+  color: #3b82f6; /* Accent blue on hover */
 }
 
-.hero p{
-  max-width:600px;
-  color:#cbd5e1;
+/* Ensure sections have perfect breathing space and don't get hidden behind the fixed navbar */
+section {
+  padding: 100px 10%;
+  min-height: auto;
+  box-sizing: border-box;
 }
 
-.section{
-  padding:80px 20px;
-  max-width:900px;
-  margin:auto;
+/* Subtle, polished hover animations for interactive items */
+a, button {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), filter 0.2s ease;
 }
 
-.section h2{
-  margin-bottom:20px;
-  color:#38bdf8;
+a:hover, button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px); /* Micro-interaction lifting effect */
 }
 
-.card{
-  background:#0f172a;
-  padding:20px;
-  margin-top:20px;
-  border-radius:10px;
+/* Quick responsive fixes for smaller mobile devices */
+@media (max-width: 768px) {
+  navbar {
+    padding: 15px 5%;
+  }
+  navbar a {
+    margin-left: 12px;
+    font-size: 0.85rem;
+  }
+  section {
+    padding: 80px 5%;
+  }
 }
