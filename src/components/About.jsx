@@ -6,8 +6,7 @@ const About = () => {
       <div style={styles.container}>
         <h2 style={styles.heading}>About Me</h2>
         <p style={styles.text}>
-          I am a Computer Science student interested in coding, web development, and building projects. 
-          I enjoy learning new technologies and improving my skills.
+          Computer Science student passionate about web development, machine learning, and building user-focused applications. I enjoy transforming ideas into practical solutions through clean and efficient code
         </p>
       </div>
     </section>
